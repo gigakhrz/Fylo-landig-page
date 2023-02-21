@@ -77,7 +77,7 @@ header{
     color: var(--darkblue);
     display: flex;
     align-items: center;
-    margin: 0 10px ;
+    margin: 0 auto ;
 }
 
 .first-half p{
@@ -155,7 +155,6 @@ header{
 }
 
 a{
-    margin-top: 20px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -164,7 +163,7 @@ a{
     font-size: 12px;
     line-height: 16.3;
     height: 24px;
-    margin-left: 100px;
+    margin: 20px auto 0;
     color: hsla(170, 45%, 43%, 1);
 }
 
@@ -359,5 +358,10 @@ footer p{
         max-width: 31px;
         max-height: 31px;
     }
+}
+
+@media screen and (min-width: 1024px) {
+
+    
 }
 
