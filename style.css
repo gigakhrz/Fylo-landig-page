@@ -14,10 +14,11 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: white;
     font-family: 'Raleway', sans-serif 'Open Sans', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 header{
@@ -60,6 +61,12 @@ header{
     background-position-x:center;
     padding: 360px 28px 0 28px;
     margin-bottom: 90px;
+}
+
+
+/* i removed the background image and add an image tag,adn will use it on the desktop version  */
+.ilustration1{
+    display: none;
 }
 
 .input{
@@ -111,6 +118,15 @@ header{
     height: 40px;
     border-radius: 3.125px;
     margin: auto;
+}
+
+.input button:hover{
+    background: hsla(221, 100%, 71%, 1);
+    cursor: pointer;
+}
+
+.qudi{
+    display: none;
 }
 
 .for-background{
@@ -289,6 +305,11 @@ a{
     margin: auto;
 }
 
+.main-footer-input button:hover{
+    background: hsla(221, 100%, 71%, 1);
+    cursor: pointer;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -360,8 +381,171 @@ footer p{
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1300px) {
+    header{
+        padding: 65px 80px 0;
+        margin-bottom: 100px;
+    }
 
-    
+    .header-container{
+        gap: 58px;
+    }
+
+    .header-container p{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .first-half{
+        padding: 10px 80px;
+        background-position-x: 90%;
+        background-position-y: -1%;
+        background-size: 600px 420px;
+        height: 475px;
+        gap: 20px;
+    }
+
+    .first-half h1{
+        margin: 0;
+        min-width: 500px;
+        max-width: 600px;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: left;
+    }
+
+    .first-half p{
+        min-width: 500px;
+        max-width: 600px;
+        font-size: 17px;
+        line-height: 24px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .input{
+        flex-direction: row;
+    }
+
+    .input button{
+        max-width: 200px;
+        margin: 0;
+    }
+
+
+    #email{
+        margin: 0;
+    }
+
+
+    .qudi{
+        display: block;
+        width: 100%;
+    }
+
+    .for-background{
+        background-image: none;
+        background-color: hsla(240, 75%, 98%, 1);
+    }
+
+    .second-half{
+        min-width: 500px;
+        height: 550px;
+        padding: 120px 570px 0 80px;
+        background-position-y: 150px;
+        background-position-x: 720px;
+        background-size: 520px 400px;
+    }
+
+    .second-half h3 {
+        line-height: 47px;
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .second-half p{
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 530px;
+        text-align: left;
+    }
+
+    a{
+        margin: 0;
+    }
+
+    .input{
+        flex-direction: row;
+    }
+
+    .input button{
+        max-width: 200px;
+    }
+
+    .third-half{
+        margin: -150px 0 110px 80px;
+    }
+
+    .main-footer{
+        flex-direction: row;
+        gap: 227px;
+        padding: 100px 120px 85px 80px;
+    }
+
+    .early-access{
+        align-items: flex-start;
+        gap: 17px;
+    }
+
+    .early-access h4{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .early-access p{
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        height: 72px;
+        min-width: 480px;
+    }
+
+    .main-footer-input{
+        gap: 34px;
+    }
+
+    .email{
+        width: 400px;
+        height: 48px;
+    }
+
+    .main-footer-input button{
+        width: 180px;
+        height: 48px;
+        margin: 0;
+    }
+
+    footer{
+        gap: 215px;
+        padding: 162px 0 86px 82px;
+    }
+
+    .footer-header{
+        margin-top: -60px;
+    }
+
+    footer p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .footer-logo{
+        width: 110px;
+        height: 38px;
+    }
 }
+
+
+
+
 
