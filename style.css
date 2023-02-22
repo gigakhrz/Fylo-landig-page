@@ -183,8 +183,18 @@ a{
     color: hsla(170, 45%, 43%, 1);
 }
 
+a:hover{
+    color: hsla(170, 63%, 66%, 1);
+    border-color: hsla(170, 63%, 66%, 1);
+}
+
+
 .arrow{
     margin-left: 15.5px;
+}
+
+a:hover .arrow circle{
+    fill: hsla(170, 63%, 66%, 1);
 }
 
 .third-half{
