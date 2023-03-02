@@ -73,6 +73,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
 }
 
 .first-half h1{
@@ -98,12 +99,43 @@ header{
 }
 
 #email{
-    border: 0.625px solid #07043B;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
     border-radius: 3.125px;
     width: 304px;
     height: 40px;
     margin: auto;
+}
+
+.error{
+    border: 1px solid red;
+}
+
+.success{
+    border: 1px solid green;
+}
+
+.input-result{
+    display: flex;
+    flex-direction: column;
+    max-width: 305px;
+}
+
+#error-p{
+    color: red;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    display: none;
+}
+
+#success-p{
+    color: lightgreen;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    display: none;
 }
 
 .input button{
@@ -435,6 +467,7 @@ footer p{
 
     .input{
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .input button{
