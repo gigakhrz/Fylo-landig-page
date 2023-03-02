@@ -107,11 +107,11 @@ header{
 }
 
 .error{
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 .success{
-    border: 1px solid green;
+    border: 2px solid green;
 }
 
 .input-result{
@@ -322,15 +322,34 @@ a:hover .arrow circle{
     flex-direction: column;
     margin-top: 24px;
     gap: 8px;
+    align-items: center;
 }
 
 .email{
-    border: 0.625px solid #07043B;
+    /* border: 0.625px solid #07043B; */
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
     border-radius: 3.125px;
     width: 240px;
     height: 32px;
     margin: auto;
+}
+
+#error-p2{
+    color: red;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    display: none;
+}
+
+#success-p2{
+    color: lightgreen;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    display: none;
 }
 
 .main-footer-input button{
@@ -391,6 +410,7 @@ footer p{
     gap: 23px;
     align-items: center;
 }
+
 
 .about{
     display: flex;
@@ -555,6 +575,7 @@ footer p{
 
     .main-footer-input{
         gap: 34px;
+        align-items: flex-start;
     }
 
     .email{
